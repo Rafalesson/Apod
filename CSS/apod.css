@@ -23,6 +23,7 @@ body{
     width: 100px;
     height: 100px;
     background: url(https://raw.githubusercontent.com/Rafalesson/Apod/main/IMG/nasa.png);
+    cursor: pointer;
 }
 
 #img:hover{
