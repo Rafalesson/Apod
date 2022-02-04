@@ -72,11 +72,13 @@ section{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     font-size: 17px;
     background-color: #DADADA;
+    cursor: text;
 }
 
 .botao{
     padding: 10px 50px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .botao:hover, #date:hover{
