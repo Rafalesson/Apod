@@ -22,12 +22,12 @@ body{
     left: 48%;
     width: 100px;
     height: 100px;
-    background: url(https://raw.githubusercontent.com/Rafalesson/Apod/main/IMG/nasa.png);
+    background: url(https://raw.githubusercontent.com/Rafalesson/Apod/main/IMG/nasa2.png);
     cursor: pointer;
 }
 
 #img:hover{
-    background: url(https://raw.githubusercontent.com/Rafalesson/Apod/main/IMG/nasa2.png);
+    background: url(https://raw.githubusercontent.com/Rafalesson/Apod/main/IMG/nasa.png);
 }
 
 main{
