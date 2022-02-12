@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="IMG/planeta.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/apod.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/apod.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Zen+Kaku+Gothic+Antique&display=swap');
+    </style>
     <title>Apod Nasa</title>
 </head>
 
@@ -20,14 +26,18 @@
     </header>
 
     <main>
-        <section>
-            <form action="">
+        <section class="pesquisa">
+            <form action="" id="form">
                 <fieldset class="corpoForm">
                     <legend>Escolha uma data:</legend>
-                    <input type="date" id="date" name="date" min="1995-06-20">
+                    <input type="date" id="data" name="date" min="1995-06-20">
                     <button type="submit" class="botao">Procurar</button>
                 </fieldset>
             </form>
+        </section>
+
+        <section id="resultado">
+
         </section>
     </main>
 

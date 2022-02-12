@@ -1,12 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
+html, body{
+    width: 100%;
+    height: 100%;
     background-color: whitesmoke;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bolder;
 }
 
 .menu{
@@ -14,7 +11,7 @@ body{
     height: auto;
     background-color: #DADADA;
     text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgb(0, 73, 175);
 }
 
 #img{
@@ -32,47 +29,62 @@ body{
 
 main{
     width: 100%;
-    height: 79vh;
-    overflow: hidden;
-    
+    height: 100%;
+    display: flex;
+      
 }
 
-section{
-    position: relative;
-    top: 10vh;
-    left: 40%;
+.pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    background-color: #DADADA;
+    box-shadow: 0px 0px 10px rgb(0, 73, 175);
+    border-radius: 15px;
+}
+
+#resultado{
+    width: 65%;
+    border-radius: 15px;
+    background: url(https://raw.githubusercontent.com/Rafalesson/Apod/main/IMG/nasa2.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .corpoForm{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 25%;
     height: 50vh;
-    text-align: center;
-    align-items: center;
     background-color: #DADADA;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgb(0, 73, 175);
     border-radius: 15px;
 }
 
-.corpoForm legend{
-    border: 1px solid black;
+.corpoForm > legend{
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 73, 175);
     border-radius: 5px;
     background-color: whitesmoke;
-    padding: 5px;    
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 6px;  
+    box-shadow: 0px 0px 10px rgb(0, 73, 175);
 }
 
-.botao, #date{
+.botao, #data{
     margin: 15px;
     padding: 10px 30px;
     border-radius: 15px;
     border-style: none;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     font-size: 17px;
     background-color: #DADADA;
     cursor: text;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 73, 175, .4);
 }
 
 .botao{
@@ -81,8 +93,9 @@ section{
     cursor: pointer;
 }
 
-.botao:hover, #date:hover{
+.botao:hover, #data:hover{
     background-color: whitesmoke;
+    box-shadow: 0px 0px 10px rgb(0, 73, 175);
 }
 
 footer{
@@ -93,5 +106,5 @@ footer{
     height: 5vh;
     color: black;
     background-color: #DADADA;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgb(0, 73, 175);
 }
